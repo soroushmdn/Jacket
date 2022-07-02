@@ -1,0 +1,433 @@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 992PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (max-width: 992px) {
+  // @@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@
+  .nav__list {
+    display: flex;
+    margin-left: initial;
+    column-gap: initial;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 55%;
+    z-index: 100;
+
+    background-color: var(--body-color);
+    padding: 1rem 2.5rem;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 4px hsla(220, 18%, 50%, 0.3);
+  }
+
+  .nav__link {
+    position: relative;
+    width: 65px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 0.1rem;
+  }
+
+  .nav__list i {
+    display: initial;
+    font-size: 1.2rem;
+    z-index: 1;
+  }
+
+  .nav__link span {
+    font-size: 0.7rem;
+    z-index: 1;
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+
+  .nav__link-hovertop,
+  .nav__link-hoverbottom {
+    position: absolute;
+    left: 0;
+    width: 65px;
+    height: 50px;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+  }
+
+  .nav__link-hovertop {
+    background: linear-gradient(135deg, hsl(220, 30%, 90%), hsl(220, 18%, 75%));
+    box-shadow: 0 2px 5px hsl(220, 18%, 80%);
+    top: 0;
+  }
+
+  .nav__link-hoverbottom {
+    background: var(--second-color);
+    box-shadow: 0 2px 5px hsl(345, 31%, 80%);
+    bottom: -5rem;
+  }
+
+  .nav__link:hover .nav__link-hovertop {
+    top: -5rem;
+  }
+  .nav__link:hover .nav__link-hoverbottom {
+    bottom: 0;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@@
+  .home__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 8rem;
+
+    padding-top: 7rem;
+  }
+
+  .home__images {
+    width: 250px;
+  }
+
+  .home__img-small {
+    width: 200px;
+    bottom: -5rem;
+    left: -6rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ NEW @@@@@@@@@@@@@@@@@@@@@@
+
+  .new .container {
+    max-width: 767px;
+  }
+
+  .new__container {
+    gap: 2rem;
+  }
+
+  .new__link {
+    column-gap: 0.5rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@@@@@@@@@@
+
+  .collection .container {
+    max-width: 600px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ PRODUCTS @@@@@@@@@@@@@@@@@@@@@@
+  .products .swiper {
+    max-width: 767px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ BRANDS @@@@@@@@@@@@@@@@@@@@@@
+  .brands__container {
+    grid-template-columns: repeat(4, 120px);
+    gap: 3rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@
+  .footer__container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+
+  .footer__copy {
+    margin-bottom: 4rem;
+  }
+}
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 767PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (max-width: 767px) {
+  // @@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@
+  .nav__list {
+    width: 70%;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@@
+  .home__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .home__images {
+    width: 400px;
+    justify-self: center;
+    justify-content: end;
+  }
+
+  .home__img-big {
+    width: 250px;
+  }
+
+  .home__img-small {
+    width: 200px;
+    bottom: -4rem;
+    left: 1rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ NEW @@@@@@@@@@@@@@@@@@@@@@
+
+  .new .container {
+    max-width: 576px;
+  }
+
+  .new__container {
+    gap: 1.5rem;
+  }
+
+  .new__link {
+    font-size: var(--tiny-font-size);
+  }
+
+  .new__icon {
+    font-size: 1rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@@@@@@@@@@
+
+  .collection .container {
+    max-width: 400px;
+  }
+
+  .collection__container {
+    gap: 3rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ PRODUCTS @@@@@@@@@@@@@@@@@@@@@@
+  .products .swiper {
+    max-width: 576px;
+  }
+
+  .products__link {
+    padding: 0.8rem;
+  }
+
+  .products__title {
+    font-size: var(--small-font-size);
+  }
+
+  .products__btn {
+    font-size: 1rem;
+    padding: 0.3rem;
+    width: 25px;
+    height: 25px;
+  }
+  // @@@@@@@@@@@@@@@@@@@@@@ BRANDS @@@@@@@@@@@@@@@@@@@@@@
+  .brands__container {
+    grid-template-columns: repeat(4, 100px);
+    gap: 2rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@
+  .footer__container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .footer__group {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 576PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (max-width: 576px) {
+  .container {
+    width: calc(100% - 3rem);
+  }
+  // @@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@
+  .nav__list {
+    width: 90%;
+    padding: 1rem 1.5rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@@
+  .home {
+    position: relative;
+  }
+
+  .home__container {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .home__images {
+    position: initial;
+    width: initial;
+  }
+
+  .home__img-big {
+    position: absolute;
+    width: 220px;
+    bottom: 5rem;
+    right: 0;
+  }
+
+  .home__img-small {
+    width: 160px;
+    bottom: 2rem;
+    right: 10rem;
+    left: initial;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ NEW @@@@@@@@@@@@@@@@@@@@@@
+  .new .container {
+    max-width: 280px;
+  }
+
+  .new__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .new__link {
+    padding: 1rem;
+    font-size: var(--normal-font-size);
+  }
+
+  .new__icon {
+    font-size: 1.2rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@@@@@@@@@@
+
+  .collection {
+    position: relative;
+  }
+
+  .collection.section {
+    padding: 7rem 0 7rem;
+  }
+
+  .collection .container {
+    max-width: initial;
+  }
+
+  .collection__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 230px);
+    gap: 0;
+  }
+
+  .collection__data-right,
+  .collection__data-left {
+    position: absolute;
+  }
+
+  .collection__data-left {
+    top: 4rem;
+    right: 12rem;
+  }
+
+  .collection__data-right {
+    bottom: 4rem;
+    left: 12rem;
+  }
+
+  .collection__img-left,
+  .collection__img-right {
+    position: absolute;
+    width: 225px;
+  }
+
+  .collection__img-left {
+    left: -3rem;
+    bottom: 4rem;
+  }
+
+  .collection__img-right {
+    right: -3rem;
+    top: 4rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ PRODUCTS @@@@@@@@@@@@@@@@@@@@@@
+  .products__card {
+    width: 250px;
+  }
+
+  .products__btn {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ BRANDS @@@@@@@@@@@@@@@@@@@@@@
+  .brands__container {
+    grid-template-columns: repeat(2, 120px);
+    gap: 0 2rem;
+  }
+}
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ MAX-WIDTH : 374PX @@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (max-width: 374px) {
+  // @@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@
+  .nav__link,
+  .nav__link-hovertop,
+  .nav__link-hoverbotto {
+    width: 52px;
+    height: 50px;
+  }
+
+  .nav__link span {
+    font-size: 0.6rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@@
+  .home__img-big {
+    width: 180px;
+    bottom: 7rem;
+    right: 0;
+  }
+
+  .home__img-small {
+    width: 140px;
+    bottom: 3rem;
+    right: 8rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ NEW @@@@@@@@@@@@@@@@@@@@@@
+  .new .container {
+    max-width: 250px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@@@@@@@@@@
+
+  .collection__container {
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  .collection__data-left {
+    right: 10.5rem;
+  }
+
+  .collection__data-right {
+    left: 10.5rem;
+  }
+
+  .collection__img-left,
+  .collection__img-right {
+    width: 200px;
+  }
+}
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
+}

@@ -1,0 +1,36 @@
+.collection {
+  background-color: var(--bg-color-light);
+}
+
+.collection.section {
+  padding: 5rem 0 5rem;
+}
+
+.collection .container {
+  max-width: 800px;
+}
+
+.collection__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.collection__content {
+  display: grid;
+  row-gap: 5rem;
+}
+
+.collection__data-left {
+  justify-self: end;
+}
+
+.collection__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.collection .btn-cover {
+  padding: 0.7rem 1rem;
+  font-size: var(--tiny-font-size);
+}

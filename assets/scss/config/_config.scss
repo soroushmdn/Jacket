@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+:root {
+  --header-height: 4rem;
+
+  --bg-color: hsl(220, 18%, 70%);
+  --bg-color-light: hsl(220, 18%, 80%);
+  --title-color: hsl(220, 10%, 10%);
+  --text-color: hsl(220, 5%, 20%);
+  --text-color-light: hsl(220, 5%, 50%);
+  --body-color: hsl(220, 15%, 100%);
+  --second-color: linear-gradient(
+    135deg,
+    hsl(345, 31%, 95%),
+    hsl(345, 31%, 85%)
+  );
+
+  --body-font: 'Lora', serif;
+  --biggest-font-size: 4.5rem;
+  --h1-font-size: 2.3rem;
+  --h2-font-size: 1.7rem;
+  --h3-font-size: 1.3rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.9rem;
+  --tiny-font-size: 0.8rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi: 600;
+  --font-bold: 700;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.7rem;
+    --h2-font-size: 1.2rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.9rem;
+    --small-font-size: 0.8rem;
+    --tiny-font-size: 0.7rem;
+  }
+}
+
+// @@@@@@@@@@@@@@@@@ BASE @@@@@@@@@@@@@@@@@
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  background-color: var(--body-color);
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  font-family: var(--body-color);
+  font-size: var(--normal-font-size);
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+// @@@@@@@@@@@@@@@@@ CSS REUSABLE CLASSES @@@@@@@@@@@@@@@@@
+
+.container {
+  max-width: 1140px;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5rem 0 3rem;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title span {
+  color: hsl(345, 31%, 70%);
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn-under {
+  background-color: #000;
+}
+
+.btn-cover {
+  background: var(--second-color);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  padding: 1rem 1.8rem;
+  transition: 0.3s;
+}
+
+.btn:hover .btn-cover {
+  transform: translate(10px, 10px);
+}
+
+// @@@@@@@@@@@@@@@@@ SCROLL UP @@@@@@@@@@@@@@@@@
+
+.scrollup {
+  position: fixed;
+  bottom: -30%;
+  right: 1.5rem;
+  z-index: 99;
+
+  display: inline-flex;
+  font-size: 1.2rem;
+  color: var(--title-color);
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 3px hsla(220, 18%, 30%, 0.3);
+  background-color: hsla(220, 18%, 100%, 0.3);
+  transition: 0.3s;
+}
+
+.scrollup:hover {
+  background-color: hsla(220, 18%, 100%, 1);
+  transform: translateY(-10px);
+}
+
+.show-scrollup {
+  bottom: 7rem;
+}
+
+// @@@@@@@@@@@@@@@@@ SCROLL BAR @@@@@@@@@@@@@@@@@
+
+::-webkit-scrollbar {
+  background-color: hsl(0, 0%, 90%);
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 70%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 60%);
+}
+
+// @@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: hsla(0, 0%, 30%, 0.2);
+  backdrop-filter: blur(30px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader__img {
+  width: 100px;
+  height: 100px;
+  animation: preloader 2s ease-in-out infinite;
+}
+
+@keyframes preloader {
+  0% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}

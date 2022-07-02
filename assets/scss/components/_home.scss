@@ -1,0 +1,41 @@
+.home {
+  background: linear-gradient(
+    160deg,
+    hsl(220, 18%, 85%) 0,
+    hsl(220, 18%, 70%) 30%
+  );
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 2rem;
+}
+
+.home__images {
+  position: relative;
+  width: 400px;
+  justify-self: end;
+  display: flex;
+}
+
+.home__img-small {
+  width: 300px;
+  position: absolute;
+  bottom: -7rem;
+  left: -10rem;
+}

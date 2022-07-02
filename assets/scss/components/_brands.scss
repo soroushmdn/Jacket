@@ -1,0 +1,10 @@
+.brands__container {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  justify-content: center;
+  gap: 5rem;
+}
+
+.brands__img:nth-child(even) {
+  margin-top: 2rem;
+}

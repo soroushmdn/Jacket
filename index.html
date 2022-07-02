@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacket.</title>
+
+    <!-- @@@@@@@@@@@@@@@@@ FAVICON @@@@@@@@@@@@@@@@@ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- @@@@@@@@@@@@@@@@@ remixicon.com @@@@@@@@@@@@@@@@@ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- @@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!-- @@@@@@@@@@@@@@@@@ css @@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- @@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@ -->
+    <div class="preloader" id="preloader">
+      <svg
+        class="preloader__img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        style="fill: hsl(345, 31%, 60%)"
+      >
+        <path
+          d="M13 10.551v-.678A4.005 4.005 0 0 0 16 6c0-2.206-1.794-4-4-4S8 3.794 8 6h2c0-1.103.897-2 2-2s2 .897 2 2-.897 2-2 2a1 1 0 0 0-1 1v1.551l-8.665 7.702A1.001 1.001 0 0 0 3 20h18a1.001 1.001 0 0 0 .664-1.748L13 10.551zM5.63 18 12 12.338 18.37 18H5.63z"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@ -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="nav__logo">
+            <img src="./assets/img/favicon.png" alt="" class="nav__logo-img" />
+            Jacket.
+          </a>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+                <div class="nav__link-hovertop"></div>
+                <div class="nav__link-hoverbottom"></div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">
+                <i class="ri-price-tag-3-line"></i>
+                <span>New</span>
+
+                <div class="nav__link-hovertop"></div>
+                <div class="nav__link-hoverbottom"></div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#collection" class="nav__link">
+                <i class="ri-compass-line"></i>
+                <span>Collection</span>
+
+                <div class="nav__link-hovertop"></div>
+                <div class="nav__link-hoverbottom"></div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">
+                <i class="ri-t-shirt-line"></i>
+                <span>Products</span>
+
+                <div class="nav__link-hovertop"></div>
+                <div class="nav__link-hoverbottom"></div>
+              </a>
+            </li>
+          </ul>
+
+          <i class="ri-shopping-bag-fill nav__cart"></i>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- @@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@ -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="home__container">
+            <div class="home__data">
+              <h1 class="home__title">
+                New Closing <br />
+                Collection
+              </h1>
+              <p class="home__description">
+                The new collection of clothing from <br />
+                the best brands this year.
+              </p>
+
+              <a href="#" class="btn">
+                <div class="btn-under">
+                  <div class="btn-cover">Explore</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="home__images">
+              <img src="./assets/img/home1.png" alt="" class="home__img-big" />
+              <img
+                src="./assets/img/home2.png"
+                alt=""
+                class="home__img-small"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@@@@@@@@@@@@@@@@ NEW @@@@@@@@@@@@@@@@@ -->
+      <section class="new section" id="new">
+        <div class="container">
+          <h2 class="section-title">New Categories</h2>
+          <div class="new__container">
+            <article class="new__card">
+              <img src="./assets/img/new1.png" class="new__img" alt="" />
+
+              <a href="#" class="new__link">
+                <div class="new__data">
+                  <h3 class="new__title">Hoodie & Sweatshirt</h3>
+                  <span class="new__description">Winter collection</span>
+                </div>
+                <i class="ri-arrow-right-fill new__icon"></i>
+              </a>
+            </article>
+            <article class="new__card">
+              <img src="./assets/img/new2.png" class="new__img" alt="" />
+
+              <a href="#" class="new__link">
+                <div class="new__data">
+                  <h3 class="new__title">Pants & Jackets</h3>
+                  <span class="new__description">Winter collection</span>
+                </div>
+                <i class="ri-arrow-right-fill new__icon"></i>
+              </a>
+            </article>
+            <article class="new__card">
+              <img src="./assets/img/new3.png" class="new__img" alt="" />
+
+              <a href="#" class="new__link">
+                <div class="new__data">
+                  <h3 class="new__title">Coats & Coat Sets</h3>
+                  <span class="new__description">Winter collection</span>
+                </div>
+                <i class="ri-arrow-right-fill new__icon"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@@@@@@@@@@@@@@@@ COLLECTIOIN @@@@@@@@@@@@@@@@@ -->
+      <section class="collection section" id="collection">
+        <div class="container">
+          <div class="collection__container">
+            <div class="collection__content">
+              <div class="collection__data-left">
+                <h2 class="collection__title">
+                  Men <br />
+                  Collection
+                </h2>
+                <a href="#" class="btn">
+                  <div class="btn-under">
+                    <div class="btn-cover">Explore Clothes</div>
+                  </div>
+                </a>
+              </div>
+              <img
+                src="./assets/img/collection2.png"
+                alt=""
+                class="collection__img-left"
+              />
+            </div>
+            <div class="collection__content">
+              <img
+                src="./assets/img/collection1.png"
+                alt=""
+                class="collection__img-right"
+              />
+              <div class="collection__data-right">
+                <h2 class="collection__title">
+                  Women <br />
+                  Collection
+                </h2>
+                <a href="#" class="btn">
+                  <div class="btn-under">
+                    <div class="btn-cover">Explore Clothes</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@@@@@@@@@@@@@@@@ PRODUCTS @@@@@@@@@@@@@@@@@ -->
+      <section class="products section" id="products">
+        <div class="container">
+          <h2 class="section-title">Best Products</h2>
+          <div class="swiper products__swiper">
+            <div class="swiper-wrapper">
+              <article class="products__card swiper-slide">
+                <img
+                  src="./assets/img/product1.png"
+                  alt=""
+                  class="products__img"
+                />
+
+                <a href="#" class="products__link">
+                  <h3 class="products__title">Gotland black Jacket</h3>
+                  <span class="products__price">$124.99</span>
+                  <div class="products__btn">
+                    <i class="ri-shopping-cart-2-fill"></i>
+                  </div>
+                </a>
+              </article>
+              <article class="products__card swiper-slide">
+                <img
+                  src="./assets/img/product2.png"
+                  alt=""
+                  class="products__img"
+                />
+
+                <a href="#" class="products__link">
+                  <h3 class="products__title">Black Sports Shorts</h3>
+                  <span class="products__price">$34.99</span>
+                  <div class="products__btn">
+                    <i class="ri-shopping-cart-2-fill"></i>
+                  </div>
+                </a>
+              </article>
+              <article class="products__card swiper-slide">
+                <img
+                  src="./assets/img/product3.png"
+                  alt=""
+                  class="products__img"
+                />
+
+                <a href="#" class="products__link">
+                  <h3 class="products__title">Knox Quilted Jacket</h3>
+                  <span class="products__price">$97.99</span>
+                  <div class="products__btn">
+                    <i class="ri-shopping-cart-2-fill"></i>
+                  </div>
+                </a>
+              </article>
+              <article class="products__card swiper-slide">
+                <img
+                  src="./assets/img/product4.png"
+                  alt=""
+                  class="products__img"
+                />
+
+                <a href="#" class="products__link">
+                  <h3 class="products__title">Blue Sport Pants</h3>
+                  <span class="products__price">$69.99</span>
+                  <div class="products__btn">
+                    <i class="ri-shopping-cart-2-fill"></i>
+                  </div>
+                </a>
+              </article>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-line"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@@@@@@@@@@@@@@@@ BRANDS @@@@@@@@@@@@@@@@@ -->
+      <section class="brands section">
+        <div class="container">
+          <h2 class="section-title">Brands We Sell</h2>
+          <div class="brands__container">
+            <img src="./assets/img/logo1.png" alt="" class="brands__img" />
+            <img src="./assets/img/logo2.png" alt="" class="brands__img" />
+            <img src="./assets/img/logo3.png" alt="" class="brands__img" />
+            <img src="./assets/img/logo4.png" alt="" class="brands__img" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@ -->
+    <footer class="footer section">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__content">
+            <a href="#" class="footer__logo">
+              <img
+                src="./assets/img/favicon.png"
+                alt=""
+                class="footer__logo-img"
+              />
+              Jacket.
+            </a>
+            <p class="footer__description">
+              Committed to bringing you the <br />
+              best clothing from popular <br />
+              brands
+            </p>
+          </div>
+
+          <div class="footer__group">
+            <div class="footer__content">
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#" class="footer__link">Shop</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Category</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Contact info</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__content">
+              <h3 class="footer__title">Blog</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#" class="footer__link">Events</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Popular news</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Recent news</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__content">
+              <h3 class="footer__title">Office</h3>
+              <ul class="footer__list">
+                <li class="footer__information">Monday-Saturday</li>
+                <li class="footer__information">9AM - 10PM</li>
+              </ul>
+            </div>
+
+            <div class="footer__content">
+              <h3 class="footer__title">Contact us</h3>
+              <div class="footer__social">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="footer__social-link"
+                  ><i class="ri-instagram-line"></i
+                ></a>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  class="footer__social-link"
+                  ><i class="ri-twitter-line"></i
+                ></a>
+                <a
+                  href="https://web.whatsapp.com/"
+                  target="_blank"
+                  class="footer__social-link"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__copy">
+          <p class="footer__copy-description">
+            &copy; 2022 coded by
+            <a href="https://github.com/soroushmdn" target="_blank"
+              >Soroush Karimi.</a
+            >
+            Design from Bedimcode.
+          </p>
+
+          <a href="#" class="footer__copy-link">Terms & Conditions </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- @@@@@@@@@@@@@@@@@ SCROLL UP @@@@@@@@@@@@@@@@@ -->
+    <a href="#" class="scrollup" id="scrollup">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- @@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@ scrollrevealjs.org @@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@ MAIN JS @@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
