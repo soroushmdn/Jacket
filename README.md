@@ -6,4 +6,5 @@ Desktop design:
 
 
 Mobile design:
+
 ![mobile](https://user-images.githubusercontent.com/95019708/177048666-e432add8-42dc-4eee-95b5-0e1df1012782.png)
