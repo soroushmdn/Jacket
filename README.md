@@ -1,4 +1,4 @@
-# 🧥Jacket
+# 🧥 Jacket
 - Responsive clothing ecommerce Landing page Design Using HTML CSS &amp; JavaScript.
 - Contains animations when scrolling.
 - Contains minimalist Preloader animation.
